@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:grid;
+    height: 100vh;
+}
+.Encabezado{
+    display: flex;
+    border: 2px solid red;
+
+}
+.Menu{
+    display: flex;
+}
+.Tareas{
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    padding: 5px;
+    margin: auto;
+    justify-content: center;
+    border: 2px solid black;
+}
+.Tarea__Informacion{
+    
+    border: 2px solid rgb(139, 38, 170);
+}
+.Tarea__Imagen{
+    height: 100%;
+    width: 50%;
+    border: 2px solid rgb(0, 140, 255);
+}
+.Imagen{
+    height: 100%;
+    width: 100%;
+}
