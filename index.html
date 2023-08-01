@@ -1,41 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snap</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/favicon-32x32.png">
 </head>
+
 <body>
     <header class="Encabezado">
-        <article class="Logo">
-            <img src="/images/logo.svg" alt="logo">
-        </article>
-        <article class="Menu">
-            <p>Features</p>
-            <p>Company</p>
-            <p>Careers</p>
-            <p>About</p>
-        </article>
-        <article class="Iniciar">
-            <a href="">Login</a>
-            <button>Register</button>
-        </article>
+        
+        <div class="Info__Encabezado">
+            <article class="Logo">
+                <img src="/images/logo.svg" alt="logo">
+            </article>
+            <article class="Menu">
+                <p class="Config__Hover">Features</p>
+                <img class="Tarea__Flecha Config__Hover" id="Flecha__Feature" src="/images/icon-arrow-down.svg" alt="">
+                <p class="Config__Hover">Company</p>
+                <img class="Tarea__Flecha Config__Hover" id="Flecha__Company" src="/images/icon-arrow-down.svg" alt="">
+                <p class="Config__Hover">Careers</p>
+                <p class="Config__Hover">About</p>
+            </article>
+        </div>
+
+        <div>
+            <article class="Tarea__Iniciar">
+                <p class="Config__Hover">Login</p>
+                <button class="Config__Hover">Register</button>
+            </article>
+        </div>
+
     </header>
+    <section class="Tarea__Menu">
+        <article class="Menu__Factures" id="Features">
+            <div class="Tarea__Opciones">
+                <img src="/images/icon-todo.svg" alt="">
+                <p>Todo List</p>
+            </div>
+            <div class="Tarea__Opciones">
+                <img src="/images/icon-calendar.svg" alt="">
+                <p>Calendar</p>
+            </div>
+            <div class="Tarea__Opciones">
+                <img src="/images/icon-reminders.svg" alt="">
+                <p>Reminders</p>
+            </div>
+            <div class="Tarea__Opciones">
+                <img src="/images/icon-planning.svg" alt="">
+                <p>Planning</p>
+            </div>
+        </article>
+        <article class="Menu__Company" id="Company">
+            <div>
+                <p>History</p>
+            </div>
+            <div>
+                <p>Our Team</p>
+            </div>
+            <div>
+                <p>Blog</p>
+            </div>
+        </article>
+    </section>
+
     <main class="Tareas">
         <section class="Tarea__Informacion">
             <div class="Titulo">
-                <h1>Make remote work</h1>
-            </div class="Parrafo">
-            <div>
+                <h1>Make </h1>
+                <h2>remote work</h2>
+            </div>
+            <div class="Parrafo">
                 <p>Get your team in sync, no matter your location.
-                    Streamline processes, create team rituals, and watch productivity soar. 
+                    Streamline processes, create team rituals, and watch productivity soar.
                 </p>
             </div>
-            <div>
+            <div class="Tarea_Learn--More">
                 <button>Learn more</button>
             </div>
-            <div>
+            <div class="Tarea__Guias">
                 <img src="/images/client-databiz.svg" alt="databiz">
                 <img src="/images/client-audiophile.svg" alt="audio phile">
                 <img src="/images/client-meet.svg" alt="meet">
@@ -44,12 +89,11 @@
         </section>
         <section class="Tarea__Imagen">
             <img class="Imagen" src="/images/image-hero-desktop.png" alt="">
+            <img class="Imagen__Movile" src="/images/image-hero-mobile.png" alt="">
         </section>
     </main>
 
-
-    
-    
-<script src="main.js"></script> 
+    <script src="main.js"></script>
 </body>
+
 </html>
