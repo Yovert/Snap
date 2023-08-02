@@ -104,12 +104,13 @@ body{
     padding: 5px;
     margin: auto;
     justify-content: center;
+    position: relative;
     /* border: 2px solid black; */
 }
 .Tarea__Informacion{
-    width: 445px;
+    width: 50vw;
     padding: 20px 20px;
-    margin-right: 10vw;
+    /* margin-right: 10vw; */
     /* overflow: hidden; */
     /* border: 2px solid rgb(139, 38, 170); */
 }
@@ -149,50 +150,99 @@ body{
 }
 .Tarea__Guias img{
     margin-left: 15px;
-    width: 80px;
+    width: 65px;
 }
 .Tarea__Imagen{
     height: 100%;
-    width: 445px;
+    width: 50vw;
     padding: 0px 30px;   
-    /* border: 2px solid rgb(0, 140, 255); */
 }
 .Imagen{
-    height: 90%;
-    width: 405px;
+    width: 350px;
 }
 .Imagen__Movile{
     display: none;
 }
-@media (max-width:1096px){
+.Logo__Menu{
+    padding: 0px 20px;
+    display: none;
+}
+@media (max-width:900px){
     .Titulo{
         font-size: 30px;
     }
     .Parrafo{
         width: 300px;
     }
-    
+    .Tarea__Imagen{
+        width: 900px;
+    }
 }
-/* @media (max-width:500px){
+@media (max-width:768px){
+    .Imagen{
+        width: 330px;
+    }
+    .Tarea__Informacion{
+        width: 45vw;
+    }
+    .Tarea__Guias{
+        padding: 10px 0px;
+        
+    }
+
+}
+@media (max-width:710px){
     body{
         height: 140vh;
     }
     .Tareas{
         flex-direction: column-reverse;
-        border: 1px solid red;
-        height: 80%;
+        height: 100%;
         position: relative;
-    }
-    .Info__General__Encabezado{
-        display: none;
+        margin: auto;
     }
     .Imagen{
         display: none;
     }
+    .Tarea__Imagen{
+        width: 100%;
+        
+    }
     .Imagen__Movile{
         display: grid;
-        width: 90vw;
-        position: absolute;
+        width: 100%;
+        /* position: absolute; */
         left: 0px;
     }
-} */
+    .Menu{
+        display: none;
+    }
+    .Tarea__Iniciar{
+        display: none;
+    }
+    .Tarea__Informacion{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* padding: 0px; */
+    }
+    .Logo__Menu{
+        display: flex;
+    }
+    .Titulo{
+        display: flex;
+        font-size: 27px;
+    }
+    .Titulo h2{
+        margin-left: 10px;
+    }
+    .Parrafo{
+        align-items: center;
+        width: 400px;
+    }
+    .Encabezado{
+        width: 100%;
+    }
+}
