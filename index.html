@@ -10,64 +10,74 @@
 </head>
 
 <body>
-    <header class="Encabezado">
-        
+    <div class="Fondo__Negro" id="Fondo_Negro"></div>
+    <header class="Encabezado">     
         <div class="Info__Encabezado">
             <article class="Logo">
                 <img src="/images/logo.svg" alt="logo">
             </article>
+            <article class="Logo__Menu">
+                <img id="Abrir__Menu" src="/images/icon-menu.svg" alt="">
+            </article>
+        </div>
+        <div class="Navegacion__General" id="Menu__Movil" >       
+            <article class="Cerrar">
+                <img id="Cerrar__Menu" src="/images/icon-close-menu.svg" alt="">
+            </article>
             <article class="Menu">
-                <p class="Config__Hover">Features</p>
-                <img class="Tarea__Flecha Config__Hover" id="Flecha__Feature" src="/images/icon-arrow-down.svg" alt="">
-                <p class="Config__Hover">Company</p>
-                <img class="Tarea__Flecha Config__Hover" id="Flecha__Company" src="/images/icon-arrow-down.svg" alt="">
+                <div class="Features" id="Opciones__Feature">
+                    <p class="Config__Hover Nombre__Feature">Features</p>
+                    <img class="Tarea__Flecha Config__Hover" id="Flecha__Feature" src="/images/icon-arrow-down.svg" alt="">
+                    <article class="Menu__Factures"  id="Features">
+                        <div class="Tarea__Opciones">
+                            <img src="/images/icon-todo.svg" alt="">
+                            <p>Todo List</p>
+                        </div>
+                        <div class="Tarea__Opciones">
+                            <img src="/images/icon-calendar.svg" alt="">
+                            <p>Calendar</p>
+                        </div>
+                        <div class="Tarea__Opciones">
+                            <img src="/images/icon-reminders.svg" alt="">
+                            <p>Reminders</p>
+                        </div>
+                        <div class="Tarea__Opciones">
+                            <img src="/images/icon-planning.svg" alt="">
+                            <p>Planning</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="Company" id="Opciones__Company">
+                    <p class="Config__Hover">Company</p>
+                    <img class="Tarea__Flecha Config__Hover" id="Flecha__Company" src="/images/icon-arrow-down.svg" alt="">
+                    <article class="Menu__Company" style="display: none;" id="Company">
+                        <div>
+                            <p>History</p>
+                        </div>
+                        <div>
+                            <p>Our Team</p>
+                        </div>
+                        <div>
+                            <p>Blog</p>
+                        </div>
+                    </article>
+                </div>
                 <p class="Config__Hover">Careers</p>
                 <p class="Config__Hover">About</p>
             </article>
-        </div>
-
-        <div>
-            <article class="Tarea__Iniciar">
-                <p class="Config__Hover">Login</p>
-                <button class="Config__Hover">Register</button>
-            </article>
-        </div>
-        <article class="Logo__Menu">
-            <img src="/images/icon-menu.svg" alt="">
-        </article>
-
+                
+            <div>
+                <article class="Tarea__Iniciar">
+                    <p class="Config__Hover">Login</p>
+                    <button class="Config__Hover">Register</button>
+                </article>
+            </div>
+        
+        </div> 
+    
     </header>
-    <section class="Tarea__Menu">
-        <article class="Menu__Factures" id="Features">
-            <div class="Tarea__Opciones">
-                <img src="/images/icon-todo.svg" alt="">
-                <p>Todo List</p>
-            </div>
-            <div class="Tarea__Opciones">
-                <img src="/images/icon-calendar.svg" alt="">
-                <p>Calendar</p>
-            </div>
-            <div class="Tarea__Opciones">
-                <img src="/images/icon-reminders.svg" alt="">
-                <p>Reminders</p>
-            </div>
-            <div class="Tarea__Opciones">
-                <img src="/images/icon-planning.svg" alt="">
-                <p>Planning</p>
-            </div>
-        </article>
-        <article class="Menu__Company" id="Company">
-            <div>
-                <p>History</p>
-            </div>
-            <div>
-                <p>Our Team</p>
-            </div>
-            <div>
-                <p>Blog</p>
-            </div>
-        </article>
-    </section>
+   
 
     <main class="Tareas">
         <section class="Tarea__Informacion">

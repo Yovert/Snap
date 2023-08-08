@@ -9,15 +9,23 @@ body{
     display:grid;
     height: 100vh;
 }
+.Navegacion__General{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+.Fondo__Negro{
+    display: none;
+}
 .Encabezado{
     display: flex;
-    justify-content: space-between;
     padding: 10px;
     height: 50px;
     width: 100vw;
     font-size: 12px;
     color: rgb(100, 99, 99);
-    
+    align-items: center;
     /* border: 2px solid red; */
 }
 .Config__Hover{
@@ -26,12 +34,20 @@ body{
 .Config__Hover:hover{
     color: black; 
 }
-.Info__Encabezado{
+.Features{
     display: flex;
+    align-items: center;
+    position: relative;
+}
+.Company{
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 .Menu{
     display: flex;
     align-items: center;
+    position: relative;
     padding: 0px 15px;
 }
 .Menu p{
@@ -57,13 +73,6 @@ body{
     background: #fff;
     color: rgb(100, 99, 99);
 }
-.Tarea__Menu{
-    display: flex;
-    padding: 40px 80px;
-    /* border: 1px solid red; */
-    position: absolute;
-    width: max-content;
-}
 .Tarea__Opciones{
     display: flex;
     padding: 5px 0px;
@@ -74,23 +83,29 @@ body{
 }
 
 .Menu__Factures{
-    border: 1px solid black;
     padding: 0px 10px;
     width: 130px;
+    /* border: 1px solid black; */
     height: 112px;
     border-radius: 10px;
-    position: absolute;
     display: none;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 4vh;
 }
 .Menu__Company{
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
     padding: 0px 16px;
     width: 100px;
     border-radius: 10px;
     height: 90px;
-    margin-left: 160px;
+    /* margin-left: 160px; */
+    left: 20px;
     display: none;
     position: absolute;
+    top: 4vh;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
 }
 
 .Menu__Company p{
@@ -101,22 +116,22 @@ body{
     display: flex;
     width: 90vw;
     height: 500px;
-    padding: 5px;
+    padding: 7px;
     margin: auto;
     justify-content: center;
     position: relative;
     /* border: 2px solid black; */
 }
 .Tarea__Informacion{
-    width: 50vw;
+    width: 48vw;
     padding: 20px 20px;
-    /* margin-right: 10vw; */
-    /* overflow: hidden; */
-    /* border: 2px solid rgb(139, 38, 170); */
 }
 .Titulo{
-    font-size: 36px;
+    width: 350px;
+    /* border: 2px solid black; */
+    font-size: 35px;
     padding: 40px 0px
+    
 }
 .Parrafo{
     display: flex;
@@ -124,6 +139,7 @@ body{
     font-size: 14px;
     color: rgb(100, 99, 99);
     line-height: 20px;
+    /* border: 2px solid black; */
 }
 .Tarea_Learn--More{
     padding: 30px 0px;
@@ -167,18 +183,20 @@ body{
     padding: 0px 20px;
     display: none;
 }
-@media (max-width:900px){
+.Cerrar{
+    display: none;
+}
+
+@media (max-width:768px){
     .Titulo{
         font-size: 30px;
+        width: 300px;
+        /* border: 1px solid black; */
     }
     .Parrafo{
         width: 300px;
+        /* border: 1px solid black; */
     }
-    .Tarea__Imagen{
-        width: 900px;
-    }
-}
-@media (max-width:768px){
     .Imagen{
         width: 330px;
     }
@@ -186,9 +204,14 @@ body{
         width: 45vw;
     }
     .Tarea__Guias{
-        padding: 10px 0px;
-        
+        width: 300px;
+        padding: 15px 0px;
+        /* border: 1px solid black; */
     }
+    .Tarea__Guias img{
+        margin-left: 5px;
+    }
+   
 
 }
 @media (max-width:710px){
@@ -201,24 +224,62 @@ body{
         position: relative;
         margin: auto;
     }
+    .Info__Encabezado{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
     .Imagen{
         display: none;
     }
     .Tarea__Imagen{
         width: 100%;
-        
+    }
+    .Features{
+        height: 3vh;
+    }
+    .Menu__Factures{
+        left: 12px;
+        box-shadow: none;
+    }
+    .Menu__Company{
+        box-shadow: none;
+        left:0;
+        padding: 0;
     }
     .Imagen__Movile{
-        display: grid;
+        display: block;
         width: 100%;
         /* position: absolute; */
         left: 0px;
+        /* border: 2px solid ; */
     }
+    .Navegacion__General{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background-color: #fff;
+        width: 60%;
+        z-index: 1;
+        color: black;
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+    .Cerrar{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        /* z-index: 1; */
+        top: 20px;
+        cursor: pointer;
+    }
+    
     .Menu{
-        display: none;
-    }
-    .Tarea__Iniciar{
-        display: none;
+        display: grid;
+        gap: 1rem;
+        margin-top: 40px;
     }
     .Tarea__Informacion{
         width: 100%;
@@ -226,14 +287,17 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
+        /* display: none; */
         /* padding: 0px; */
     }
-    .Logo__Menu{
-        display: flex;
+    .Logo__Menu {
+        display: grid;
+        cursor: pointer;
     }
     .Titulo{
         display: flex;
         font-size: 27px;
+        width: 400px;
     }
     .Titulo h2{
         margin-left: 10px;
@@ -244,5 +308,55 @@ body{
     }
     .Encabezado{
         width: 100%;
+        position: relative;
+    }
+    .Tarea__Iniciar{
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .Tarea__Iniciar button{
+        color: black;
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+    }
+    .Fondo__Negro{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 40%;
+        display: none;
     }
 }
+@media (max-width:375px){
+    .Tarea__Imagen{
+        width: 85vh;
+        margin: auto;
+        padding: 0;
+        
+    }
+    .Navegacion__General{
+        height: 100%;
+    }
+    .Fondo__Negro{
+        height: 100%;
+    }
+    .Logo__Menu{
+        display: flex;
+        right: 0;
+    }
+    .Tareas{
+        
+        width: 100%;
+    }
+    .Tarea__Guias{
+        
+        margin: auto;
+    }
+}
+
