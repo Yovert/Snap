@@ -16,13 +16,13 @@ let ancho = window.innerWidth;
         Flecha_Feature.addEventListener('click',()=>{
             if(Feature.style.display === 'none' ){
                 Feature.style.display='block';
-                Flecha_Feature.src = '/images/icon-arrow-up.svg';
+                Flecha_Feature.src = './images/icon-arrow-up.svg';
                 Opciones__Feature.style.height='20vh';
                 Opciones__Feature.style.alignItems='normal';
             }
             else{
                 Feature.style.display='none'; 
-                Flecha_Feature.src = '/images/icon-arrow-down.svg';
+                Flecha_Feature.src = './images/icon-arrow-down.svg';
                 Opciones__Feature.style.height='3vh';
             }
         
@@ -31,13 +31,13 @@ let ancho = window.innerWidth;
         Flecha_Company.addEventListener('click', ()=>{
             if(Company.style.display === 'none'){
                 Company.style.display = 'block';
-                Flecha_Company.src = '/images/icon-arrow-up.svg';
+                Flecha_Company.src = './images/icon-arrow-up.svg';
                 Opciones__Company.style.height='17vh'
                 Opciones__Company.style.alignItems='normal';
             }
             else{
                 Company.style.display= 'none';
-                Flecha_Company.src = '/images/icon-arrow-down.svg';
+                Flecha_Company.src = './images/icon-arrow-down.svg';
                 Opciones__Company.style.height='3vh'
             }
         })
@@ -63,22 +63,22 @@ let ancho = window.innerWidth;
         Flecha_Feature.addEventListener('click',()=>{
             if(Feature.style.display === 'none' ){
                 Feature.style.display='block';
-                Flecha_Feature.src = '/images/icon-arrow-up.svg';         
+                Flecha_Feature.src = './images/icon-arrow-up.svg';         
             }
             else{
                 Feature.style.display='none'; 
-                Flecha_Feature.src = '/images/icon-arrow-down.svg';           
+                Flecha_Feature.src = './images/icon-arrow-down.svg';           
             }      
         })
     
         Flecha_Company.addEventListener('click', ()=>{
             if(Company.style.display === 'none'){
                 Company.style.display = 'block';
-                Flecha_Company.src = '/images/icon-arrow-up.svg';
+                Flecha_Company.src = './images/icon-arrow-up.svg';
             }
             else{
                 Company.style.display= 'none';
-                Flecha_Company.src = '/images/icon-arrow-down.svg';            
+                Flecha_Company.src = './images/icon-arrow-down.svg';            
             }
         })
 
